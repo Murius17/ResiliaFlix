@@ -1,0 +1,70 @@
+
+header{
+    background: rgba(0, 0, 0, 0.986);
+    padding: 100px 100px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90em;
+}
+.footer{ background: black;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.nap{
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(223, 10, 10);
+}
+
+.caixa{
+    width: 350px;
+    top:25px ;
+    left: 5%;
+
+}
+
+.baixo{
+    width: 100%;
+    position: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+nav{
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    right: 20%;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color:black;
+}
+.footer{
+    background: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
