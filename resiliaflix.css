@@ -1,70 +1,94 @@
-
+body{
+    background-color: rgb(2, 2, 85);
+}
 header{
-    background: rgba(0, 0, 0, 0.986);
-    padding: 100px 100px 100px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90em;
+    background-color: rgb(3, 0, 0);
 }
-.footer{ background: black;
-    position: absolute;
-    bottom: 0%;
+
+.cabecalho .container{
+        display: flex;
+        align-items: center;
+        height: 150px;
+        font-family:courier,arial,helvetica;
+}
+
+.tituloCabecalho{
+    width: 15%;
+    margin-left: 15px;
+    color: rgb(3, 74, 207);
+    font-size: 45px;
+    
+}
+
+.navegacaoCabecalho{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.itemNavegacao{
+    padding: 25px;
+    color: rgb(2, 41, 218);
+    font-size: 20px;
+}
+.itemNavegacao:hover{
+    color: rgb(244, 248, 9);
+    font-size: 25px;
+    transition: 0.3s;
+}
+.barraPesquisa{
+    margin-right: 05px;
+    width: 20em;
+}
+.filme{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
     width: 100%;
 }
-
-.nap{
-    position: absolute;
-    top: 100px;
-    right: 5%;
-    text-transform: uppercase;
-    font-size: 50px;
-    font-style: italic;
-    color: rgb(223, 10, 10);
+.fotofilme{
+    border: solid black 10px;
+    flex-basis: 220px;
 }
 
-.caixa{
-    width: 350px;
-    top:25px ;
-    left: 5%;
-
+footer{
+    background-color: black;
+    height: 100px;
+    margin-top: 15px;
+}
+.container4 .iconeRodape{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.iconImg{
+    padding: 0 25px;
+}
+.textoRodape{
+    color: rgb(0, 38, 255);
+    display: flex;
+    justify-content: center;
+    padding-top: 15px ;
 }
 
-.baixo{
-    width: 100%;
-    position: center;
+/*parte mobile*/
+
+
+@media (max-width: 976px) {
+.cabecalho .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    text-transform: uppercase;
-    font-size: 15px;
-
+    height: auto;
 }
-nav{
-    position: absolute;
-    top: 100px;
-    left: 0%;
-    right: 20%;
-
-}
-
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-nav a{
-    text-transform: uppercase;
-    color: rgb(255, 0, 0);
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-
-}
-nav a:hover{
-    color:black;
-}
-.footer{
-    background: black;
-    position: absolute;
-    bottom: 0;
+.tituloCabecalho{
+    text-align: center;
     width: 100%;
 }
-
-
+.navegacaoCabecalho{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}
